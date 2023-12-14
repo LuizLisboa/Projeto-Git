@@ -4,14 +4,14 @@
 </head>
 <body>
 <h1>INSTRUÇÕES INICIAIS</h1>
-<div class="comentario" style="background-color: #7d8590;">
+<div style="background-color: #7d8590;">
 Este é um projeto utilizado para treinar a linguagem git. 
 Assim como exemplificar alguns comandos importantes.
 </div>
 <br>
 
 <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
-<div>
+<div style="background-color: #7d8590;">
 1 - git init<p>
 Cria um repositório vazio, tornandoa a master/main do projeto
 
