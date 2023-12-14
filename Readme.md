@@ -25,3 +25,6 @@ arquivos no servidor informado (origin)
 
 7 - git push -u origin main
 Envia os arquivos para o servidor informado
+
+8 - git checkout -b "nome-da-branch"
+Sai da branch atual e cria uma nova branch
