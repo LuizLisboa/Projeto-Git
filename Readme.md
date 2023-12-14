@@ -1,15 +1,10 @@
 <!--DOCTYPE html-->
 <html>
 <head>
- <style>
-  .comentario{
-   background-color: #7d8590;
-  }
- </style>
 </head>
 <body>
 <h1>INSTRUÇÕES INICIAIS</h1>
-<div class="comentario">
+<div class="comentario" style="background-color: #7d8590;">
 Este é um projeto utilizado para treinar a linguagem git. 
 Assim como exemplificar alguns comandos importantes.
 </div>
