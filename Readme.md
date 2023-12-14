@@ -28,3 +28,6 @@ Envia os arquivos para o servidor informado
 
 8 - git checkout -b "nome-da-branch"
 Sai da branch atual e cria uma nova branch
+
+9 - git checkout main
+Sai da brach atual e vai para a main
