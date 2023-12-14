@@ -32,5 +32,9 @@ Sai da branch atual e cria uma nova branch
 9 - git checkout main
 Sai da brach atual e vai para a main
 
+10 - git merge nome_da_branch
+Faz o merge da branch informada para a branch que está conectado no momento
+
+
 ##################################################################################
 Novo teste
