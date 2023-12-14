@@ -32,9 +32,11 @@ Sai da branch atual e cria uma nova branch
 9 - git checkout main
 Sai da brach atual e vai para a main
 
+<h1>MERGE</h1><br>
+<hr><br>
 10 - git merge nome_da_branch
 Faz o merge da branch informada para a branch que está conectado no momento
 
-
-##################################################################################
-Novo teste
+11 - git push -u origin main
+Após o comando de merge é necessário realizar o push na main para que as informações 
+sejam atualizadas no servidor
