@@ -15,3 +15,13 @@ Mostra os arquivos novos ou editados que precisam ser enviados ao servidor
 4 - git commit -m "escreva uma mensagem"
 Envia os arquivos para o servidor, adicionando uma mensagem referente à subida 
 dos arquivos
+
+5 - git branch -M "main"
+Muda da branch master para a main
+
+6 - git remote add origin link_da_branch
+Cria a conexão entre a máquina local e o servidor (remote), adicionando os
+arquivos no servidor informado (origin)
+
+7 - git push -u origin main
+Envia os arquivos para o servidor informado
