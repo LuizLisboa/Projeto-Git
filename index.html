@@ -7,6 +7,10 @@
    background-color: #0d1117; 
    color: white;
   }
+  hr {
+   border: 1px solid #484f58;
+   margin-bottom: 25px;
+  }
   .container{
    padding: 35px;
    background-color: #0e1117;
@@ -22,55 +26,98 @@
 </head>
 <body>
 <div class="container">
- <h1>INSTRUÇÕES INICIAIS</h1>
- <div class="comentario">
- Este é um projeto utilizado para treinar a linguagem git. 
- Assim como exemplificar alguns comandos importantes.
- </div>
+ <h1>SUMÁRIO</h1>
+ <hr>
+ 
+ <ol>
+  <li><a href="#secao1">INSTRUÇÕES INICIAIS</a></li><p>
+  <li><a href="#secao2">ALGUNS COMANDOS E SUAS FUNÇÕES</a></li><p>
+  <li><a href="#secao3">MERGE</a></li><p>
+  <li><a href="#secao4">CLONE</a></li><p>
+ </ol>
+ <br>
+ <br>
  <br>
  
- <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
- <div class="comentario">
- 1 - git init<p>
- Cria um repositório vazio, tornandoa a master/main do projeto<p>
+ <section id="secao1">
+  <h1>INSTRUÇÕES INICIAIS</h1>
+  <hr>
+  <div class="comentario">
+  Este é um projeto utilizado para treinar a linguagem git. 
+  Assim como exemplificar alguns comandos importantes.
+  </div>
+ </section>
  <br>
- 2 - git add nome_do_arquivo.extensao<p>
- Manda os arquivos para área de steding, ou sejam, envia os arquivos para área
- de preparação de armazenamento dos arquivos no servidor<p>
- <br>
- 3 - git status<p>
- Mostra os arquivos novos ou editados que precisam ser enviados ao servidor<p>
- <br>
- 4 - git commit -m "escreva uma mensagem"<p>
- Envia os arquivos para o servidor, adicionando uma mensagem referente à subida 
- dos arquivos<p>
- <br>
- 5 - git branch -M "main"<p>
- Muda da branch master para a main<p>
- <br>
- 6 - git remote add origin link_da_branch<p>
- Cria a conexão entre a máquina local e o servidor (remote), adicionando os
- arquivos no servidor informado (origin)
- <br>
- 7 - git push -u origin main<p>
- Envia os arquivos para o servidor informado<p>
- <br>
- 8 - git checkout -b "nome-da-branch"<p>
- Sai da branch atual e cria uma nova branch<p>
- <br>
- 9 - git checkout main<p>
- Sai da brach atual e vai para a main
- </div>
  
- <h1>MERGE</h1>
- <div class="comentario">
- 10 - git merge nome_da_branch
- Faz o merge da branch informada para a branch que está conectado no momento
+ <section id="secao2">
+  <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
+  <hr>
+  <div class="comentario">
+  <ol>
+   <li>git init</li>
+   Cria um repositório vazio, tornandoa a master/main do projeto<p>
+   <br>
+   <li>git add nome_do_arquivo.extensao</li>
+   Manda os arquivos para área de steding, ou sejam, envia os arquivos para área
+   de preparação de armazenamento dos arquivos no servidor<p>
+   <br>
+   <li>git status</li>
+   Mostra os arquivos novos ou editados que precisam ser enviados ao servidor<p>
+   <br>
+   <li>git commit -m "escreva uma mensagem"</li>
+   Envia os arquivos para o servidor, adicionando uma mensagem referente à subida 
+   dos arquivos<p>
+   <br>
+   <li>git branch -M "main"</li>
+   Muda da branch master para a main<p>
+   <br>
+   <li>git remote add origin link_da_branch</li>
+   Cria a conexão entre a máquina local e o servidor (remote), adicionando os
+   arquivos no servidor informado (origin)<p>
+   <br>
+   <li>git push -u origin main</li>
+   Envia os arquivos para o servidor informado<p>
+   <br>
+   <li>git checkout -b "nome-da-branch"</li>
+   Sai da branch atual e cria uma nova branch<p>
+   <br>
+   <li>git checkout main</li>
+   Sai da brach atual e vai para a main
+  </ol>
+  </div>
+ </section>
+ <br>
+ <br>
+ <br>
  
- 11 - git push -u origin main
- Após o comando de merge é necessário realizar o push na main para que as informações 
- sejam atualizadas no servidor
- </div>
+ <section id="secao3">
+  <h1>MERGE</h1>
+  <hr>
+  <div class="comentario">
+  <ol>
+   <li>git merge nome_da_branch</li>
+   Faz o merge da branch informada para a branch que está conectado no momento<p>
+   <br>
+   <li>git push -u origin main</li>
+   Após o comando de merge é necessário realizar o push na main para que as informações 
+   sejam atualizadas no servidor<p>
+  </div>
+ </section>
+ <br>
+ <br>
+ <br>
+ 
+ <section id="secao4">
+  <h1>CLONE</h1>
+  <hr>
+  <div class="comentario">
+   <ol>
+    <li>git clone link_da_branch</li>
+    Cria um clone da branc informada no link acima<p>
+    <br>
+   </ol>
+  </div>
+ </section>
 </div>
 </body>
 </html>
