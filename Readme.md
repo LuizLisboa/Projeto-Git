@@ -1,17 +1,22 @@
 <!--DOCTYPE html-->
 <html>
 <head>
+ <style>
+  .comentario{
+   background-color: #7d8590;
+  }
+ </style>
 </head>
 <body>
 <h1>INSTRUÇÕES INICIAIS</h1>
-<div style="background-color: #7d8590;">
+<div class="cometario">
 Este é um projeto utilizado para treinar a linguagem git. 
 Assim como exemplificar alguns comandos importantes.
 </div>
 <br>
 
 <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
-<div style="background-color: #7d8590;">
+<div class="cometario">
 1 - git init<p>
 Cria um repositório vazio, tornandoa a master/main do projeto
 
@@ -44,11 +49,13 @@ Sai da brach atual e vai para a main
 </div>
 
 <h1>MERGE</h1>
+<div class="cometario">
 10 - git merge nome_da_branch
 Faz o merge da branch informada para a branch que está conectado no momento
 
 11 - git push -u origin main
 Após o comando de merge é necessário realizar o push na main para que as informações 
 sejam atualizadas no servidor
+</div>
 </body>
 </html>
