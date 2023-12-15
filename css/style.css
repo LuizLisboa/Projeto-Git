@@ -22,3 +22,46 @@ hr {
  margin-left: auto; 
  margin-right: auto;
 }
+
+.button{
+ text-align: right;
+}
+.button img{
+ width: 30;
+}
+
+.bt1:hover img{
+ -webkit-transform: scale(1.3);
+ transform: scale(1.3);
+}
+
+.bt2 img{
+ transform: rotate(180deg)
+}
+.bt2:hover img{
+ -webkit-transform: scale(1.3);
+ transform: scale(1.3) rotate(180deg) ;
+}
+
+.redes{
+ text-align: center;
+}
+
+.redes img{
+ width: 30;
+}
+
+.redes a{
+ text-decoration: none;
+ color: white;
+}
+
+.redes a:hover{
+ font-weight: bold;
+ color: #484f58;
+}
+
+.redes1:hover img{
+ -webkit-transform: scale(1.3);
+ transform: scale(1.3);
+}
