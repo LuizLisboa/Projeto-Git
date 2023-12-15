@@ -2,35 +2,65 @@
 <html>
 <head>
  <title>Introdução ao GIT</title>
- <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+ <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
+
+<!--Início do documento-->
 <div class="container">
+<!--Início do Sumário-->
+ <section id="inicio">
+ <hr>
  <h1>SUMÁRIO</h1>
  <hr>
  
  <ol>
-  <li><a href="#secao1">INSTRUÇÕES INICIAIS</a></li><p>
+  <li><a href="#secao1">DOWNLOAD E INSTALAÇÃO</a></li><p>
   <li><a href="#secao2">ALGUNS COMANDOS E SUAS FUNÇÕES</a></li><p>
   <li><a href="#secao3">MERGE</a></li><p>
   <li><a href="#secao4">CLONE</a></li><p>
+  <li><a href="#secao5">CRIANDO UM REPOSITÓRIO</a></li><p>
  </ol>
+ </section>
+ <!--Fim do Sumário-->
  <br>
  <br>
  <br>
  
+ <!--Início da Seção Download-->
  <section id="secao1">
-  <h1>INSTRUÇÕES INICIAIS</h1>
+  <hr>
+  <h1>DOWNLOAD E INSTALAÇÃO</h1>
+  <div style="text-align: right;"><a href="#inicio">Anterior</a> | <a href="#secao2">Próxima</a></div>
   <hr>
   <div class="comentario">
-  Este é um projeto utilizado para treinar a linguagem git. 
-  Assim como exemplificar alguns comandos importantes.
+   Inicialmente é necessário realizar o download do Git para sua máquina, o mesmo pode ser encontrado para download 
+   <a href="https://git-scm.com/downloads" target="_blank" title="Download Git">clicando aqui</a>, basta informar seu
+   sistema operacional (SO), em seguida escolher a versão do SO e clicar em download, de acordo com a imagem abaixo.<p>
+   
+   <p style="text-align: center;"><b>Figura 1:</b> Página Inicial de Download.</p>
+   <img src="./img/download_git.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   <p style="text-align: center;"><b>Figura 2:</b> Iniciar Download.</p>
+   <img src="./img/download_git_versao.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Após a realização do download, caso você tenha baixado o <b>instalador</b>, então para utilizar o software você precisará 
+   basicamente clicar em "<b>next</b>" em todas as etapas da instalação. Caso tenha baixado a versão <b>portable</b>, a instalação não 
+   será necessária.
   </div>
  </section>
+ <!--Fim da Seção Download-->
+ <br>
+ <br>
  <br>
  
+ <!--Início da Seção Comandos e Funções-->
  <section id="secao2">
+  <hr>
   <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
+  <div style="text-align: right;"><a href="#inicio">Início</a> | <a href="#secao1">Anterior</a> | <a href="#secao3">Próxima</a></div>
   <hr>
   <div class="comentario">
   <ol>
@@ -66,12 +96,16 @@
   </ol>
   </div>
  </section>
+ <!--Fim da Seção Comandos e Funções-->
  <br>
  <br>
  <br>
  
+ <!--Início da Seção Merge-->
  <section id="secao3">
+  <hr>
   <h1>MERGE</h1>
+  <div style="text-align: right;"><a href="#inicio">Início</a> | <a href="#secao2">Anterior</a> | <a href="#secao4">Próxima</a></div>
   <hr>
   <div class="comentario">
   <ol>
@@ -83,12 +117,16 @@
    sejam atualizadas no servidor<p>
   </div>
  </section>
+ <!--Fim da Seção Merge-->
  <br>
  <br>
  <br>
  
+ <!--Início da Seção Clone-->
  <section id="secao4">
+  <hr>
   <h1>CLONE</h1>
+  <div style="text-align: right;"><a href="#inicio">Início</a> | <a href="#secao3">Anterior</a> | <a href="#secao5">Próxima</a></div>
   <hr>
   <div class="comentario">
    <ol>
@@ -98,6 +136,131 @@
    </ol>
   </div>
  </section>
+ <!--Fim da Seção Clone-->
+ <br>
+ <br>
+ <br>
+ 
+ <!--Início da Criando -->
+ <section id="secao5">
+  <hr>
+  <h1>CRIANDO UM REPOSITÓRIO</h1>
+  <div style="text-align: right;"><a href="#inicio">Início</a> | <a href="#secao4">Anterior</a></div>
+  <hr>
+  <div class="comentario">
+   Para exemplificar todos os camando que foram repassados nas seções anteriores iremos 
+   criar um repositório, onde hospedaremos um arquivo dentro do GitHub. Com isso, iremos 
+   abrir o <b>Git Bash Here</b>, para isso, iremos criar uma pasta no diretório de sua 
+   preferencia, em seguida, clicaremos com o botão direito do mouse dentro da pasta criada, 
+   em selecionamos a opção "<b>Open Git Bash Here</b>". Assim o terminal do git será aberto, 
+   os passos mencionados podem ser vistos nas figuras abaixo.<p>
+   
+   Criamos a pasta <b>TreinoGit</b> no diretório <b>Meus Documentos do Windowns</b> (Figura 3).<p>
+   
+   <p style="text-align: center;"><b>Figura 3:</b> Criação da Pasta.</p>
+   <img src="./img/FolderTreinoGit.png" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Em seguida, dentro da pasta vamos adicionamos um arquivo chamado "<b>Readme.md</b>", no qual
+   constará dentro do arquivo "Este é o meu primeiro arquivo no GitHub", conforme Figura 4.<p>
+   
+   <p style="text-align: center;"><b>Figura 4:</b> Criação do Arquivo Readme.md</p>
+   <img src="./img/Arquivo_Readme.png" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Após a criação do arquivo, vamos clicar com o botão direito do mouse e selecionar <b>Git Bash Here</b> (Figura 5).<p>
+   
+   <p style="text-align: center;"><b>Figura 5:</b> Abrindo o Terminal.</p>
+   <img src="./img/TerminalGit.png" width="700" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Com o terminal do Git aberto, devemos primeiramente verificar se o diretório em que o mesmo 
+   está condiz com o caminho do arquivo que criamos, de acordo com a Figura 6, percebemos que 
+   o mesmo está correto.<p>
+   
+   <p style="text-align: center;"><b>Figura 6:</b> Local do Arquivo.</p>
+   <img src="./img/DiretorioFile.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Agora iremos tornar este diretório a nossa master/main, para isso digitamos o comando "git init" 
+   conforme a Figura 7, após a execução do comando percebemos que ao final do diretório está sendo 
+   exibido em azul "(master)", com isso, poodemos ter certeza de que o diretório foi transformado na
+   master/main do projeto.<p>
+   
+   <p style="text-align: center;"><b>Figura 6:</b> Local do Arquivo.</p>
+   <img src="./img/gitInit.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Porém este folder está localmente na nossa máquina, ou seja, as informações ainda não foram migradas
+   para o GitHub, para isso, vamos precisar criar este mesmo folder no GitHub. Para isto, basta fazer o 
+   login na sua página do git, clicar em "create new" e em seguida selecionar "New Repository" (Figura 7).<p>
+   
+   <p style="text-align: center;"><b>Figura 7:</b> Criando Repositório no GitHub (Continua).</p>
+   <img src="./img/newRepository.png" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Agora em "Repository Name" informamos o nome da pasta que criamos no nosso pc, em seguida defininos a
+   privacidade do repositório, neste caso deixaremos "público", em seguida basta clicar em "create repository" (Figura 7.1). <p>
+   
+   <p style="text-align: center;"><b>Figura 7.1:</b> Criando Repositório no GitHub (Fim).</p>
+   <img src="./img/newRepository2.png" width="600" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Agora com o diretório criado no GitHub, voltaremos ao terminal do Git, e vamos inserir o comando "git status",
+   perceberemos que no terminal será indicado que há um arquivo Readme.md que não foi "comitado" (Figura 8).<p>
+   
+   <p style="text-align: center;"><b>Figura 8:</b> Verificando a Situação dos Arquivos.</p>
+   <img src="./img/gitStatus.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Vamos adicionar os arquivos na área temporária utilizando o comando "git add Readme.md", ou de forma global 
+   para adicionar todos os arquivos existentes "git add *", em seguida iremos fazer o commit do arquivo, 
+   utilizando git commit -m "Meu primeiro commit", seremos informados que um arquivo foi comitado com uma linha 
+   inserida (Figura 9).<p>
+   
+   <p style="text-align: center;"><b>Figura 9:</b> Adicionando Arquivos.</p>
+   <img src="./img/gitAddCommit.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Agora precisamos renomear a master para main, para isso, seguimos o comando da imagem abaixo, perceberemos 
+   que agora no nome ao final do diretório é "(main)". <p>
+   
+   <p style="text-align: center;"><b>Figura 9:</b> Mudando nome para Main.</p>
+   <img src="./img/gitMain.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Em seguida iremos criar a conexão entre a máquina local e o servidor do GitHub, para isso, precisamos obter 
+   o link do diretório no GitHub, para isso, basta copiar o link que aparece no início da página, conforme Figura 10. <p>
+   
+   <p style="text-align: center;"><b>Figura 10:</b> Link Folder GitHub.</p>
+   <img src="./img/LinkFolder.png" width="1000" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Voltamos ao terminal do git digitamos o comando corforme a imagem abaixo, com isso, criamos a conexão entre 
+   os arquivos locais e o servidor.<p>
+   
+   <p style="text-align: center;"><b>Figura 11:</b> Criando Conexão entre o Local e o Servidor.</p>
+   <img src="./img/gitRemote.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+   
+   Para que os arquivos sejam incluídos no servidor, basta digitar o comando na figura abaixo, agora se 
+   atualizarmos a página na web perceberemos que os arquivos estarão lá.<p>
+   
+   <p style="text-align: center;"><b>Figura 12:</b> Subindo os Arquivos para o GitHub.</p>
+   <img src="./img/gitPush.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <br>
+  </div>
+ </section>
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+ <div class="comentario">
+ <div style="text-align: center;"><a href="#inicio">Início</a> | <a href="#secao1">SEÇÃO 1</a> | <a href="#secao2">SEÇÃO 2</a> | <a href="#secao3">SEÇÃO 3</a> | <a href="#secao4">SEÇÃO 4</a> | <a href="#secao5">SEÇÃO 5</a></div><p>
+ <a href="https://www.linkedin.com/in/josé-luiz-de-carvalho-lisboa-11933270/" title="Linkedin" target="_black"><img src="./img/linkedin.png" width="20"></a>
+ </div>
+ <!--Fim da Seção Clone-->
 </div>
 </body>
 </html>
