@@ -2,18 +2,26 @@
 <html>
 <head>
  <title>Introdução ao GIT</title>
- <link rel="stylesheet" type="text/css" href="./css/style.css">
+ <link id="css_style" rel="stylesheet" type="text/css" href="./css/style_dark.css">
+ <script type="text/javascript" src="./js/scripts.js"></script>
 </head>
 <body>
 
 <!--Início do documento-->
 <div class="container">
+ <label class="theme">
+  <img id="light_mode" src="./img/dark_mode.png" style="width: 35;" hidden="none">
+  <img id="dark_mode" src="./img/light_mode.png" style="width: 35;">
+  <input id="theme" type="checkbox" onclick="theme_mode();">
+ </label>
+  
 <!--Início do Sumário-->
  <section id="inicio">
  <hr>
  <h1>SUMÁRIO</h1>
  <hr>
  
+ <div class="comentario">
  <ol>
   <li><a href="#secao1">DOWNLOAD E INSTALAÇÃO</a></li><p>
   <li><a href="#secao2">ALGUNS COMANDOS E SUAS FUNÇÕES</a></li><p>
@@ -21,6 +29,7 @@
   <li><a href="#secao4">CLONE</a></li><p>
   <li><a href="#secao5">CRIANDO UM REPOSITÓRIO</a></li><p>
  </ol>
+ </div>
  </section>
  <!--Fim do Sumário-->
  <br>
@@ -32,8 +41,8 @@
   <hr>
   <h1>DOWNLOAD E INSTALAÇÃO</h1>
   <div class="button">
-   <span class="bt1"><a href="#inicio" title="Seção Anterior"><img src="./img/seta.png"></a></span> 
-   <span class="bt2"><a href="#secao2" title="Próxima Seção"><img src="./img/seta.png"></a></span>
+   <span class="bt1"><a href="#inicio" title="Seção Anterior"><img id="sec1bt1" src="./img/icon_seta.png"></a></span> &nbsp;
+   <span class="bt2"><a href="#secao2" title="Próxima Seção"><img id="sec1bt2" src="./img/icon_seta.png"></a></span>
   </div>
   <hr>
   <div class="comentario">
@@ -64,9 +73,9 @@
   <hr>
   <h1>ALGUNS COMANDOS E SUAS FUNÇÕES</h1>
   <div class="button">
-   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img src="./img/icon home.png"></a></span> 
-   <span class="bt1"><a href="#secao1" title="Seção Anterior"><img src="./img/seta.png"></a></span> 
-   <span class="bt2"><a href="#secao3" title="Próxima Seção"><img src="./img/seta.png"></a></span>
+   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img id="sec2bt0" src="./img/icon_home.png"></a></span> &nbsp;
+   <span class="bt1"><a href="#secao1" title="Seção Anterior"><img id="sec2bt1" src="./img/icon_seta.png"></a></span> &nbsp;
+   <span class="bt2"><a href="#secao3" title="Próxima Seção"><img id="sec2bt2" src="./img/icon_seta.png"></a></span>
   </div>
   <hr>
   <div class="comentario">
@@ -113,9 +122,9 @@
   <hr>
   <h1>MERGE</h1>
   <div class="button">
-   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img src="./img/icon home.png"></a></span> 
-   <span class="bt1"><a href="#secao2" title="Seção Anterior"><img src="./img/seta.png"></a></span> 
-   <span class="bt2"><a href="#secao4" title="Próxima Seção"><img src="./img/seta.png"></a></span>
+   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img id="sec3bt0" src="./img/icon_home.png"></a></span> &nbsp;
+   <span class="bt1"><a href="#secao2" title="Seção Anterior"><img id="sec3bt1" src="./img/icon_seta.png"></a></span> &nbsp;
+   <span class="bt2"><a href="#secao4" title="Próxima Seção"><img id="sec3bt2" src="./img/icon_seta.png"></a></span>
   </div>
   <hr>
   <div class="comentario">
@@ -138,9 +147,9 @@
   <hr>
   <h1>CLONE</h1>
   <div class="button">
-   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img src="./img/icon home.png"></a></span> 
-   <span class="bt1"><a href="#secao3" title="Seção Anterior"><img src="./img/seta.png"></a></span> 
-   <span class="bt2"><a href="#secao5" title="Próxima Seção"><img src="./img/seta.png"></a></span>
+   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img id="sec4bt0" src="./img/icon_home.png"></a></span> &nbsp;
+   <span class="bt1"><a href="#secao3" title="Seção Anterior"><img id="sec4bt1" src="./img/icon_seta.png"></a></span> &nbsp;
+   <span class="bt2"><a href="#secao5" title="Próxima Seção"><img id="sec4bt2" src="./img/icon_seta.png"></a></span>
   </div>
   <hr>
   <div class="comentario">
@@ -161,8 +170,9 @@
   <hr>
   <h1>CRIANDO UM REPOSITÓRIO</h1>
   <div class="button">
-   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img src="./img/icon home.png"></a></span> 
-   <span class="bt1"><a href="#secao4" title="Seção Anterior"><img src="./img/seta.png"></a></div>
+   <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img id="sec5bt0" src="./img/icon_home.png"></a></span> &nbsp;
+   <span class="bt1"><a href="#secao4" title="Seção Anterior"><img id="sec5bt1" src="./img/icon_seta.png"></a></span>
+  </div>
   <hr>
   <div class="comentario">
    Para exemplificar todos os camando que foram repassados nas seções anteriores iremos 
@@ -277,8 +287,8 @@
  
  <!--Redes Sociais-->
  <div class="redes">
-  <span class="redes1"><a href="https://www.linkedin.com/in/josé-luiz-de-carvalho-lisboa-11933270/" title="Linkedin" target="_black"><img id="red1" src="./img/linkedin.png"></a></span>
-  <span class="redes1"><a href="mailto:07joseluiz@gmail.com" title="Gmail"><img id="red2" src="./img/gmail.png"></a></span>
+  <span class="redes1"><a href="https://www.linkedin.com/in/josé-luiz-de-carvalho-lisboa-11933270/" title="Linkedin" target="_black"><img id="red1" src="./img/linkedin.png"></a></span>&nbsp;
+  <span class="redes1"><a href="mailto:07joseluiz@gmail.com" title="Gmail"><img id="red2" src="./img/gmail.png"></a></span>&nbsp;
   <span class="redes1"><img id="red3" src="./img/instagram.png"></span>
  </div>
  <br>
