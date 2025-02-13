@@ -292,6 +292,28 @@
    <span class="bt1"><a href="#inicio" title="Voltar ao Início"><img id="sec5bt0" src="./img/icon_home.png"></a></span> &nbsp;
    <span class="bt1"><a href="#secao5" title="Seção Anterior"><img id="sec5bt1" src="./img/icon_seta.png"></a></span>
   </div>
+  <div class="comentario">
+  É comum ao tentar fazer o push do projeto para a master e se deparar com uma mensagem de erro, como o exemplo da Figura 13.
+  <p style="text-align: center;"><b>Figura 13:</b> Erro ao Tentar Subir os Arquivos para o GitHub.</p>
+   <img src="./img/sec6-1-push.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   
+   Para contornar este problema basta seguir os passos abaixo:<p>
+   <ol>
+	<li>git fetch origin main:tmp;</li>
+	<li>git rebase tmp;</li>
+	<li>git push origin HEAD:main</li>
+   </ol>
+   
+   As evidências das execuções dos comandos encontram-se abaixo:
+   <p style="text-align: center;"><b>Figura 14:</b> Executando fetch.</p>
+   <img src="./img/sec6-2-fetch.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <p style="text-align: center;"><b>Figura 15:</b> Executando rebase.</p>
+   <img src="./img/sec6-3-rebase.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   <p style="text-align: center;"><b>Figura 16:</b> Executando push.</p>
+   <img src="./img/sec6-4-push.png" width="500" style="display: block; margin-left: auto; margin-right: auto;">
+   
+   Após a execução destes comandos os próximos push estão normalizados, não necessitando aplicar os passos anteriores novamente.
+  </div>
   <hr>
  </section>
  
